@@ -8,4 +8,5 @@ money_capital = 0
 for month in range(months):
     money_capital += (spend - salary)
     spend *= increase_coefficient
+    
 print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов: {money_capital:.0f}")

@@ -44,7 +44,7 @@ class PaperBook(Book):
         super().__init__(name, author)
         if not isinstance(pages, int) or pages <= 0:
             raise ValueError("Pages must be a positive integer")
-        self._pages = pages
+        self.pages = pages
 
     @property
     def pages(self):
@@ -82,7 +82,7 @@ class AudioBook(Book):
         super().__init__(name, author)
         if not isinstance(duration, (int, float)) or duration <= 0:
             raise ValueError("Duration must be a positive number")
-        self._duration = duration
+        self.duration = duration
 
     @property
     def duration(self):
